@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">IEEE</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="call_for_papers_desc">
+        The International Conference on Microelectronics has been held in numerous countries across
+        the Middle East and Asia for the past 26 years. The 27th edition of the conference will be held
+        in Casablanca, Morocco. IEEE-ICM 2015 will include oral, poster sessions and tutorials given by
+        experts on state-of-the-art topics. The regular technical program will run for three days. In addition,
+        tutorial sessions will be held on the first day of the conference. Papers are solicited in, but not
+        limited to, the following topics:
+    </string>
+
+    <string name="about_casa">
+        Casablanca the largest city of Morocco, is located in the western part of the country on the
+        Atlantic Ocean. It is also the largest city in the Maghreb, as well as one of the largest
+        and most important cities in Africa, both economically and demographically. Casablanca is
+        Morocco’s chief port and industrial center. The 2012 census, adjusted with recent numbers,
+        recorded a population of about 4 million in the prefecture of Casablanca and about 5 million
+        in the region of Grand Casablanca. Casablanca is considered the economic and business center
+        of Morocco, while the national political capital is Rabat. The leading Moroccan companies and
+        international corporations doing business there have their headquarters and main industrial
+        facilities in Casablanca. Recent industrial statistics show Casablanca retains its historical
+        position as the main industrial zone of the country. The Port of Casablanca is one of the largest
+        artificial ports in the world, and the largest port of North Africa.It is also the primary naval
+        base for the Royal Moroccan Navy.
+    </string>
+
+     <string name="venue">
+        The ICM 2015 conference will be held at Farah Golden Tulip ( http://www.goldentulipfarahcasablanca.com/en ) .
+         Special rates for ICM 2015 attendees are available at Farah Golden Tulip during the conference.
+
+Single room : 1150 MAD
+
+Double room : 1350 MAD
+    </string>
+
+         <string name="visa">
+       To avoid any misunderstandings during your stay in Morocco, check that you have a valid passport
+             in your possession. For all nationalities, the maximum length of a tourist visit is 90 days.
+             Visitors from the following countries do NOT need a visa:
+    </string>
+
+    <string name="descrip_ieee">
+        The 27th international conference on microelectronics (ICM 2015) will be held in Casablanca, Morocco, on December 20-23
+        , 2015 organized by Moroccan School on engineering science (EMSI) Casablanca and Lorraine University France.
+    </string>
+
+    <string name="test_item">
+        Plusieurs variations de Lorem Ipsum peuvent etre trouvees ici ou ,
+        mais la majeure partie d entre elles a par l addition d humour ou de mots
+        aleatoires qui ne ressemblent pas une seconde à du texte standard.
+    </string>
+
+    <string name="keynotes_item_descrip">
+
+        Patrick GIRARD received a M.Sc. degree in Electrical Engineering and a Ph.D.
+        degree in Microelectronics from the University of Montpellier, France, in 1988
+        and 1992 respectively. He is currently Research Director at CNRS (French National
+        Center for Scientific Research) and works in the Microelectronics Department of the
+        Laboratory of Informatics, Robotics and Microelectronics of Montpellier (LIRMM) – France.
+        He is co-Director of the International Associated Laboratory « LAFISI » (French-Italian
+        Research Laboratory on Hardware-Software Integrated Systems) created in 2013 by the CNRS
+        and the University of Montpellier 2 with the Politecnico di Torino, Italy. From 2010 to 2014
+        , he was head of the Microelectronics Department of LIRMM. His research interests include all
+        aspects of digital testing and memory testing, with emphasis on critical constraints such as
+        timing and power. Reliability and fault tolerance are also part of his research activities.
+        He is Technical Activities Chair of the Test Technology Technical Council (TTTC) of the IEEE
+        Computer Society. From 2006 to 2010, he was Vice-Chair of the European TTTC (ETTTC) of the IEEE
+        Computer Society. He has served on numerous conference committees and is the founder and Editor-in-Chief
+        of the ASP Journal of Low Power Electronics (JOLPE). He is also an Associate Editor of the IEEE Transactions
+        on Computers, IEEE Transactions on CAD and the Journal of Electronic Testing
+        – Theory and Applications (JETTA – Springer). He has supervised 33 PhD dissertations
+        and has published 6 books or book chapters, 60 journal papers, and more than 200 conference
+        and symposium papers on these fields. Patrick Girard is a Fellow of IEEE and a Golden Core Member of the IEEE Computer Society.
+    </string>
+    <string name="descrip_iee_p2">&lt;h2>pecial Sessions (All presented papers will be published in the conference proceedings and included in IEEE Xplore Digital Library):&lt;/h2></string>
+
+        <string name="keynotes_desc_1">
+            Patrick GIRARD received a M.Sc. degree in Electrical Engineering and a Ph.D. degree in
+            Microelectronics from the University of Montpellier, France, in 1988 and 1992 respectively.
+            He is currently Research Director at CNRS (French National Center for Scientific Research)
+            and works in the Microelectronics Department of the Laboratory of Informatics, Robotics and
+            Microelectronics of Montpellier (LIRMM) – France. He is co-Director of the International
+            Associated Laboratory « LAFISI » (French-Italian Research Laboratory on Hardware-Software
+            Integrated Systems) created in 2013 by the CNRS and the University of Montpellier 2 with the
+            Politecnico di Torino, Italy. From 2010 to 2014, he was head of the Microelectronics Department
+            of LIRMM. His research interests include all aspects of digital testing and memory testing, with
+            emphasis on critical constraints such as timing and power. Reliability and fault tolerance are
+            also part of his research activities. He is Technical Activities Chair of the Test Technology
+            Technical Council (TTTC) of the IEEE Computer Society. From 2006 to 2010, he was Vice-Chair of
+            the European TTTC (ETTTC) of the IEEE Computer Society. He has served on numerous conference
+            committees and is the founder and Editor-in-Chief of the ASP Journal of Low Power Electronics (JOLPE).
+            He is also an Associate Editor of the IEEE Transactions on Computers, IEEE Transactions on CAD and the
+            Journal of Electronic Testing – Theory and Applications (JETTA – Springer). He has supervised 33 PhD
+            dissertations and has published 6 books or book chapters, 60 journal papers, and more than 200 conference
+            and symposium papers on these fields.
+            Patrick Girard is a Fellow of IEEE and a Golden Core Member of the IEEE Computer Society.
+        </string>
+
+    <string name="keynotes_desc_2">
+
+        Jean-Michel Sallese is currently appointed Maître d’Enseignement et de Recherche at
+        the Ecole Polytechnique Fédérale de Lausanne, Switzerland. After obtaining the PhD in
+        physics from the university of Nice-Sophia Antipolis in 1991 (CNRS), he joined the EPFL
+        where he started working on semiconductor lasers and diffusion in highly confined systems.
+        Next, his research activities focused on the so-called EKV model, giving it its recent physics
+        based foundations which core relationships are now implemented in the BSIM6 model. Next,
+        he developed different charge based models for emerging field effect electron devices, and
+        in particular for the so-called multigate gate FETs and junction-less FETs, while still maintaining
+        strong links with physics. Besides, he proposed a novel concept of enhanced diodes and resistances to
+        model minority carriers generation and propagation in silicon substrates for smart power applications,
+        including EDS prediction. More recently, bio-sensors fabricated in CMOS technology became part of his
+        activities with a new concept of bio-sensor in SOI technology which is under development. Jean-Michel
+        Sallese is currently giving lectures on modelling emerging semiconductor devices as well as in silicon
+        technology dedicated to integrated circuits.
+        He was also lecturing in the framework of the IDESA courses (EC project) from 2008 to 2012.
+    </string>
+    <string name="keynotes_desc_3"><![CDATA[Hicham Bouzekri received his Engineer diploma in electronics and communications from the Ecole Mohammadia d’Ingénieurs in 1995. After two years working as a microelectronics industrial process engineer for SGS-Thomson in Casablanca, he was awarded a Fulbright scholarship in 1997 to join the Master’s of Science program of the University of Florida, Gainesville from which he graduated in 1998. He obtained a Ph.D. from Texas A&M University, College Station in 2002. After graduating, he was among the pioneers who started STMicroelectronics’ Rabat Integrated Circuit Design center, a first in Africa. He held several management positions within STM and ST-Ericsson while concurrently holding an adjunct faculty position at Al Akhawayn University. He served as ST-Ericsson representative at USB-IF Board of Directors and as their representative in MIPI – Technical Steering Group and MIPI-Unipro workgroup vice-chair. He has co-authored a number of scientific publications and industry standards in wireless communications over the span of his 19 years of experience and was elected as an IEEE senior member. After several years of successful leadership in driving innovative ecosystems involving industries and universities in Morocco, he co-founded and currently serves as the president of the Morocco Microelectronics Cluster, a government backed non-for-profit Industry-Academic consortium. In 2013, he joined Mascir management team, a Moroccan non for profit foundation conducting market oriented R&D in Microelectronics, Biotechnology & Nano-materials. He currently serves as its Chief Executive Officer]]></string>
+    <string name="ieee_desc">The 27th international conference on microelectronics (ICM 2015) will be held in Casablanca, Morocco, on December 20-23, 2015 organized by Moroccan School on engineering science (EMSI) Casablanca and Lorraine University France.</string>
+
+</resources>

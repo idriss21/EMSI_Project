@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+<!--
+    <include android:id="@+id/app_bar_kenotes_info" layout="@layout/app_bar" />
+-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    android:id="@+id/keynotes_img"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Inconnu Inconnu"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_toRightOf="@id/keynotes_img"
+                    android:id="@+id/keynotes_title"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keynote Title : Test of Low Power Devices  « Constraints and Industrial Practices »"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_toRightOf="@id/keynotes_img"
+                    android:layout_below="@id/keynotes_title"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/keynotes_sub_title"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/keynotes_description"
+                    android:text="@string/keynotes_item_descrip"
+                    android:layout_below="@id/keynotes_img"
+                    android:layout_margin="15dp"
+
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
