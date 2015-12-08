@@ -11,11 +11,14 @@
     <include android:id="@+id/app_bar_kenotes_info" layout="@layout/app_bar" />
 -->
 
+    <include layout="@layout/app_bar"/>
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"

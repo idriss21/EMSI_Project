@@ -62,11 +62,11 @@ public class Day1Fragment extends Fragment {
     private  void PlaningItems(View v)
     {
         Planing[] listPlaning = {
-                    new Planing("12:15 - 14:30","ICM PLEN 1 : Monday Plenary","Salon F"),
-                    new Planing("12:15 - 14:30","ICM PLEN 1 : Monday Plenary","Salon F"),
-                    new Planing("12:15 - 14:30","ICM PLEN 1 : Monday Plenary","Salon F"),
-                    new Planing("12:15 - 14:30","ICM PLEN 1 : Monday Plenary","Salon F"),
-                    new Planing("12:15 - 14:30","ICM PLEN 1 : Monday Plenary","Salon F")
+                new Planing("10:00 - 12:00","Registration","Main hall"),
+                new Planing("13:30 - 15:30","Tutorial 1 (Dr. Emmanuel Simeu)","Plenary Room"),
+                new Planing("15:30 - 17:30","Tutorial 2 (Dr. Mohamed Adel Serhani)","Plenary Room"),
+                new Planing("17:30 - 18:00","Welcome Reception","Main hall"),
+
         };
 
         // 1. get a reference to recyclerView

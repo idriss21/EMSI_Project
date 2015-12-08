@@ -31,23 +31,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/logo_icm"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="2dp"
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:src="@drawable/icm"/>
-            <ImageView
-                android:id="@+id/image_icm"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:src="@drawable/ad2"
-                android:layout_marginRight="2dp"
-                android:layout_toRightOf="@id/logo_icm"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/title_item"
+                android:textSize="20dip"
+                android:textColor="@color/background_tab_pressed"
+                android:text="27th International Conference on Microelectronics ICM 2015"
+                />
             <TextView
                 android:id="@+id/content_icm"
-                android:layout_below="@id/image_icm"
+                android:layout_below="@id/title_item"
                 android:padding="5dp"
                 android:textAlignment="center"
                 android:layout_width="wrap_content"
@@ -76,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:text="IMPORTANT DATES"
-                android:textSize="25dp"
-                android:layout_marginBottom="10dp"
+                android:textSize="20dip"
                 android:textColor="@color/background_tab_pressed"
-                android:layout_marginLeft="10dp"/>
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
 
             <ImageView
                 android:id="@+id/logo_time"
@@ -94,7 +90,7 @@
                 android:layout_toRightOf="@id/logo_time"
                 android:layout_below="@id/title"
                 android:layout_margin="5dp"
-                android:text="20 September Anywhere on Earth (GMT-12)"
+                android:text="Sunday 20 December "
                 android:id="@+id/textView4"/>
 
             <ImageView
@@ -116,11 +112,20 @@
                 android:layout_marginRight="5dp"
                 android:layout_below="@+id/logo_time2"
                 android:layout_alignParentStart="true"/>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/time"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentStart="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="25 October 2015"
+                android:text="Monday 21 December"
                 android:id="@+id/textView3"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
@@ -130,12 +135,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8 November 2015"
+                android:text="Tuesday 22 December "
                 android:id="@+id/textView5"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_below="@+id/logo_time2"
                 android:layout_toEndOf="@+id/logo_time2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuesday 23 December "
+                android:id="@+id/textView6"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView3"/>
 
 
         </RelativeLayout>
@@ -147,7 +162,9 @@
             android:elevation="5dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp">
+            android:layout_height="250dp"
+            android:id="@+id/sliderLayout"
+            android:visibility="gone">
 
             <com.daimajia.slider.library.SliderLayout
                 android:id="@+id/slider"

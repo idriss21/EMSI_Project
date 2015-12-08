@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">IEEE</string>
+    <string name="app_name">IEEE ICM 2015</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">About Us</string>
 
     <string name="call_for_papers_desc">
         The International Conference on Microelectronics has been held in numerous countries across
@@ -122,5 +122,6 @@ Double room : 1350 MAD
     </string>
     <string name="keynotes_desc_3"><![CDATA[Hicham Bouzekri received his Engineer diploma in electronics and communications from the Ecole Mohammadia d’Ingénieurs in 1995. After two years working as a microelectronics industrial process engineer for SGS-Thomson in Casablanca, he was awarded a Fulbright scholarship in 1997 to join the Master’s of Science program of the University of Florida, Gainesville from which he graduated in 1998. He obtained a Ph.D. from Texas A&M University, College Station in 2002. After graduating, he was among the pioneers who started STMicroelectronics’ Rabat Integrated Circuit Design center, a first in Africa. He held several management positions within STM and ST-Ericsson while concurrently holding an adjunct faculty position at Al Akhawayn University. He served as ST-Ericsson representative at USB-IF Board of Directors and as their representative in MIPI – Technical Steering Group and MIPI-Unipro workgroup vice-chair. He has co-authored a number of scientific publications and industry standards in wireless communications over the span of his 19 years of experience and was elected as an IEEE senior member. After several years of successful leadership in driving innovative ecosystems involving industries and universities in Morocco, he co-founded and currently serves as the president of the Morocco Microelectronics Cluster, a government backed non-for-profit Industry-Academic consortium. In 2013, he joined Mascir management team, a Moroccan non for profit foundation conducting market oriented R&D in Microelectronics, Biotechnology & Nano-materials. He currently serves as its Chief Executive Officer]]></string>
     <string name="ieee_desc">The 27th international conference on microelectronics (ICM 2015) will be held in Casablanca, Morocco, on December 20-23, 2015 organized by Moroccan School on engineering science (EMSI) Casablanca and Lorraine University France.</string>
+    <string name="exit_item">Exit</string>
 
 </resources>

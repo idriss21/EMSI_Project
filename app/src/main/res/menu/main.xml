@@ -8,6 +8,11 @@
         app:showAsAction="never"/>
 
     <item
+        android:id="@+id/exit_item"
+        android:orderInCategory="100"
+        android:title="@string/exit_item"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/iconMenu2"
         android:title="IEEE"
         android:icon="@mipmap/ic_launcher"

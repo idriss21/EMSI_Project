@@ -34,7 +34,7 @@ public class CallForPaper_ViewHolder  extends RecyclerView.Adapter<CallForPaper_
         holder.TitleItem.setText(ArrayCallForPapers[position].getTitle());
         holder.DescripItem.setText(ArrayCallForPapers[position].getDescription());
 
-    }
+           }
 
     @Override
     public int getItemCount() {
@@ -51,6 +51,7 @@ public class CallForPaper_ViewHolder  extends RecyclerView.Adapter<CallForPaper_
             TitleItem = (TextView) itemView.findViewById(R.id.titleItem);
             DescripItem = (TextView) itemView.findViewById(R.id.descItem);
             items = (CardView) itemView.findViewById(R.id.cv_committee);
+
         }
     }
 

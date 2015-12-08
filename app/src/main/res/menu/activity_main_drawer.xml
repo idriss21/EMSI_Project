@@ -4,20 +4,25 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/planning"
+            android:icon="@drawable/ic_insert_invitation_black_24dp"
             android:title="Planning">
         </item>
         <item
             android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_content_paste_black_24dp"
             android:title="Call for papers">
         </item>
         <item
             android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_account_box_black_24dp"
             android:title="Keynotes"/>
         <item
             android:id="@+id/nav_committee"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
             android:title="Committee"/>
         <item
             android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_local_library_black_24dp"
             android:title="General info/Travel"/>
     </group>
 </menu>

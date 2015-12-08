@@ -5,7 +5,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import app.ieee.ma.emsi.navdrawtest.R;
@@ -49,7 +48,6 @@ public class Planing_ViewHolder  extends RecyclerView.Adapter<Planing_ViewHolder
     {
         TextView time , description , location;
         CardView items;
-        ImageView imgVw ;
 
         public PlaningViewHolder(View itemView) {
             super(itemView);
@@ -58,7 +56,6 @@ public class Planing_ViewHolder  extends RecyclerView.Adapter<Planing_ViewHolder
             description = (TextView) itemView.findViewById(R.id.titleItem);
             location = (TextView) itemView.findViewById(R.id.location);
             items = (CardView) itemView.findViewById(R.id.cv_planing);
-            imgVw = (ImageView) itemView.findViewById(R.id.imgMore);
         }
     }
 }

@@ -1,12 +1,12 @@
 package app.ieee.ma.emsi.navdrawtest.fragment;
 
 import android.os.Bundle;
+import android.support.v4.view.animation.FastOutLinearInInterpolator;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.animation.OvershootInterpolator;
 
 import app.ieee.ma.emsi.navdrawtest.R;
 import app.ieee.ma.emsi.navdrawtest.classes.Commitee;
@@ -87,31 +87,31 @@ public class DisplayItem_Commitee extends ActionBarActivity {
                                         "* Hicham Rhioui, IM Morocco"),
                         new Commitee("Publicity co-Chairs",
                                 "* Emmanuel Simeu, TIMA France\n" +
-                                        "Aurélia Picod, EMSI Morocco\n" +
-                                        "Abdellah Ailane, ENSAK Morocco"),
+                                        "* Aurélia Picod, EMSI Morocco\n" +
+                                        "* Abdellah Ailane, ENSAK Morocco"),
                         new Commitee("Publication co-Chairs",
                                 "* Brahim El Bhiri, EMSI Morocco\n" +
                                         "* Khadija Bousmar, EMSI Morocco"),
                         new Commitee("Finance Chair",
                                 "* Jaouad Khayat, EMSI Morocco"),
                         new Commitee("Local Arrangement co-Chairs",
-                                "*Karim Alami, EMSI Morocco\n" +
-                                        "Abdellah Daissaoui, EMSI Morocco\n" +
-                                        "Lamia Faouzi, EMSI Morocco\n" +
-                                        "Zouhair Benabbou, EMSI Morocco\n" +
-                                        "Fatmi Bergach, EMSI Morocco"),
+                                "* Karim Alami, EMSI Morocco\n" +
+                                        "* Abdellah Daissaoui, EMSI Morocco\n" +
+                                        "* Lamia Faouzi, EMSI Morocco\n" +
+                                        "* Zouhair Benabbou, EMSI Morocco\n" +
+                                        "* Fatmi Bergach, EMSI Morocco"),
                         new Commitee("International Coordinators",
-                                "*Abdoul Rjoub, Jordan\n" +
-                                        "Khalid Salama, KSA\n" +
-                                        "Abbes Amira, Qatar\n" +
-                                        "Mohab Anis, Egypt\n" +
-                                        "Mohamed Masmoudi, Tunisia\n" +
-                                        "Mountassar Maamooun, Algeria\n" +
-                                        "Falah Awwad, Abou Dhabi"),
+                                "* Abdoul Rjoub, Jordan\n" +
+                                        "* Khalid Salama, KSA\n" +
+                                        "* Abbes Amira, Qatar\n" +
+                                        "* Mohab Anis, Egypt\n" +
+                                        "* Mohamed Masmoudi, Tunisia\n" +
+                                        "* Mountassar Maamooun, Algeria\n" +
+                                        "* Falah Awwad, Abou Dhabi"),
 
 
                         new Commitee("Program Comittee",
-                                "*Karim Alami, EMSI Morocco\n" +
+                                "* Karim Alami, EMSI Morocco\n" +
                                         "* Abdellah Ailane, ENSAK Morocco\n" +
                                         "* Hafid Ait El Mahjoub, ENSAM Morocco\n" +
                                         "* Abbes Amira, Qatar\n" +
@@ -135,39 +135,39 @@ public class DisplayItem_Commitee extends ActionBarActivity {
                                         "* Khalifa El Mansouri, UNIVH2M Morocco\n" +
                                         "* Mohamed El Massry, Univ of Waterloo Canada\n" +
                                         "* Brahim EL Bhiri, EMSI Morocco\n" +
-                                        "Fouad El Haj Hassan, UL Lebanon\n" +
-                                        "Oussama El issati, INPT Morocco\n" +
-                                        "Moanisse Fadlala, UL Lebanon\n" +
-                                        "Hafid Griguer, EMSI Morocco\n" +
-                                        "Patrick Girard, LIRMM France\n" +
-                                        "Abdellatif Hamdoun, UC Morocco\n" +
-                                        "Ali Hamia, UL Lebenon\n" +
-                                        "Luc Hebrard, US France\n" +
-                                        "Jalal Jomaa, UL Lebenon\n" +
-                                        "Ahmed Khadimi, INPT Morocco\n" +
-                                        "Abdelhakim Khatabe, ENIM France\n" +
-                                        "Djilali Kourtiche, UL France\n" +
-                                        "Hicham Lalaj, EMSI Morocco\n" +
-                                        "Erebe Lebrevere, US France\n" +
-                                        "Fabrice Monteiro, UL France\n" +
-                                        "Mohamed Masmoudi, Tunisia\n" +
-                                        "Rachid Oulad Haj Thami, ENSIAS Morocco\n" +
-                                        "Mohamed Ramdani, FSTM Morocco\n" +
-                                        "Hassan Rabah, UL France\n" +
-                                        "Abdoul Rjoub, Jordan\n" +
-                                        "Mohamed Sawan, Polytechnique Montréal Canada\n" +
-                                        "Khalid Salama, KSA\n" +
-                                        "Rachid Saadane, EHTP Morocco\n" +
-                                        "Nathalie Sauer, UL France\n" +
-                                        "Dominique Sauter, UL France\n" +
-                                        "Ali Siadat, ENSAM France\n" +
-                                        "Christophe Sauver, UL France\n" +
-                                        "Emmanuel Simeu, TIMA France\n" +
-                                        "Mohamed Tabaa, EMSI Morocco\n" +
-                                        "Nidal Rezg, UL France\n" +
-                                        "Kaikai Xu, UESTC China\n" +
-                                        "Haitham Zaraket, UL Lebanon\n" +
-                                        "Mourad Zegrari, ENSAM Morocco"),
+                                        "* Fouad El Haj Hassan, UL Lebanon\n" +
+                                        "* Oussama El issati, INPT Morocco\n" +
+                                        "* Moanisse Fadlala, UL Lebanon\n" +
+                                        "* Hafid Griguer, EMSI Morocco\n" +
+                                        "* Patrick Girard, LIRMM France\n" +
+                                        "* Abdellatif Hamdoun, UC Morocco\n" +
+                                        "* Ali Hamia, UL Lebenon\n" +
+                                        "* Luc Hebrard, US France\n" +
+                                        "* Jalal Jomaa, UL Lebenon\n" +
+                                        "* Ahmed Khadimi, INPT Morocco\n" +
+                                        "* Abdelhakim Khatabe, ENIM France\n" +
+                                        "* Djilali Kourtiche, UL France\n" +
+                                        "* Hicham Lalaj, EMSI Morocco\n" +
+                                        "* Erebe Lebrevere, US France\n" +
+                                        "* Fabrice Monteiro, UL France\n" +
+                                        "* Mohamed Masmoudi, Tunisia\n" +
+                                        "* Rachid Oulad Haj Thami, ENSIAS Morocco\n" +
+                                        "* Mohamed Ramdani, FSTM Morocco\n" +
+                                        "* Hassan Rabah, UL France\n" +
+                                        "* Abdoul Rjoub, Jordan\n" +
+                                        "* Mohamed Sawan, Polytechnique Montréal Canada\n" +
+                                        "* Khalid Salama, KSA\n" +
+                                        "* Rachid Saadane, EHTP Morocco\n" +
+                                        "* Nathalie Sauer, UL France\n" +
+                                        "* Dominique Sauter, UL France\n" +
+                                        "* Ali Siadat, ENSAM France\n" +
+                                        "* Christophe Sauver, UL France\n" +
+                                        "* Emmanuel Simeu, TIMA France\n" +
+                                        "* Mohamed Tabaa, EMSI Morocco\n" +
+                                        "* Nidal Rezg, UL France\n" +
+                                        "* Kaikai Xu, UESTC China\n" +
+                                        "* Haitham Zaraket, UL Lebanon\n" +
+                                        "* Mourad Zegrari, ENSAM Morocco"),
 
                 };
 
@@ -179,7 +179,7 @@ public class DisplayItem_Commitee extends ActionBarActivity {
         // 4. set adapter
         AlphaInAnimationAdapter alphaAdapter = new AlphaInAnimationAdapter(mAdapter);
         //alphaAdapter.setDuration(2000);
-        alphaAdapter.setInterpolator(new OvershootInterpolator());
+        alphaAdapter.setInterpolator(new FastOutLinearInInterpolator());
         alphaAdapter.setFirstOnly(false);
         recyclerView.setAdapter(new SlideInRightAnimationAdapter(mAdapter));
         // 5. set item animator

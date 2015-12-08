@@ -61,40 +61,40 @@ public class DisplayItem_CallForPapers extends AppCompatActivity {
         Commitee CALLFORPAPERS[]=
                 {
                         new Commitee("Circuits and Systems",
-                                "Analog and RF circuit design techniques.\n" +
-                                        "Digital signal and data processing.\n" +
-                                        "Wireless communication systems.\n" +
-                                        "Nonlinear circuits.\n" +
-                                        "System on chip (SoCs).\n" +
-                                        "VLSI for signal and image processing.\n" +
-                                        "Integrated antenna and front-end co-design.\n" +
-                                        "Signal processing in communication.\n" +
-                                        "Digital image processing applications.\n" +
-                                        "Biomedical circuits and systems."
+                                "> Analog and RF circuit design techniques.\n" +
+                                        "> Digital signal and data processing.\n" +
+                                        "> Wireless communication systems.\n" +
+                                        "> Nonlinear circuits.\n" +
+                                        "> System on chip (SoCs).\n" +
+                                        "> VLSI for signal and image processing.\n" +
+                                        "> Integrated antenna and front-end co-design.\n" +
+                                        "> Signal processing in communication.\n" +
+                                        "> Digital image processing applications.\n" +
+                                        "> Biomedical circuits and systems."
                                 ),
                         new Commitee("CAD Tools and Design",
-                                "Simulation (process‚ device‚ circuit‚ logic‚ timing‚ function).\n" +
-                                        "Layout (placement‚ routing‚ floor planning‚ symbolic‚ ERC‚ DRC).\n" +
-                                        "Silicon optimization.\n" +
-                                        "Parallel embedded systems.\n" +
-                                        "Testing: Formal verification.\n" +
-                                        "CAD for FPGAs.\n" +
-                                        "High-level synthesis tools.\n" +
-                                        "Design for testability.")
+                                "> Simulation (process‚ device‚ circuit‚ logic‚ timing‚ function).\n" +
+                                        "> Layout (placement‚ routing‚ floor planning‚ symbolic‚ ERC‚ DRC).\n" +
+                                        "> Silicon optimization.\n" +
+                                        "> Parallel embedded systems.\n" +
+                                        "> Testing: Formal verification.\n" +
+                                        "> CAD for FPGAs.\n" +
+                                        "> High-level synthesis tools.\n" +
+                                        "> Design for testability.")
                         ,new Commitee("Micro/Nanoelectronics",
-                        "Device characterization and modelling.\n" +
-                                "Device physics and novel structures.\n" +
-                                "Process technology‚ CMOS‚ BJT.\n" +
-                                "BiCMOS‚ GaAs.\n" +
-                                "Reliability and failure analysis.\n" +
-                                "Optoelectronics.\n" +
-                                "MEMS devices.\n" +
-                                "Packaging and surface mount technology."
+                        "> Device characterization and modelling.\n" +
+                                "> Device physics and novel structures.\n" +
+                                "> Process technology‚ CMOS‚ BJT.\n" +
+                                "> BiCMOS‚ GaAs.\n" +
+                                "> Reliability and failure analysis.\n" +
+                                "> Optoelectronics.\n" +
+                                "> MEMS devices.\n" +
+                                "> Packaging and surface mount technology."
                 ),new Commitee("Special Sessions",
-                        "Smart sensors and sensor networks.\n" +
-                                "Biomedical.\n" +
-                                "Renewable energy sources.\n" +
-                                "Complex systems.")
+                        "> Smart sensors and sensor networks.\n" +
+                                "> Biomedical.\n" +
+                                "> Renewable energy sources.\n" +
+                                "> Complex systems.")
                 };
 
         // 1. get a reference to recyclerView

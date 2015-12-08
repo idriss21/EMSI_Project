@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
@@ -27,6 +28,7 @@ import app.ieee.ma.emsi.navdrawtest.fragment.DisplayItem_Commitee;
 import app.ieee.ma.emsi.navdrawtest.fragment.DisplayItem_Person;
 import app.ieee.ma.emsi.navdrawtest.fragment.GeneralInfo;
 import app.ieee.ma.emsi.navdrawtest.fragment.Planning;
+import app.ieee.ma.emsi.navdrawtest.network.checkNetwork;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -68,33 +70,44 @@ public class MainActivity extends AppCompatActivity
         View includedLayout = findViewById(R.id.bar_main_call);
         View includedLayout2 = includedLayout.findViewById(R.id.content_main_call);
 
-        mDemoSlider = (SliderLayout) includedLayout2.findViewById(R.id.slider);
-        HashMap<String,String> url_maps = new HashMap<String, String>();
-        url_maps.put("UNIVERSITE DE LORRAINE", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/lorraine.jpg");
-        url_maps.put("EMSI", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/emsi.jpg");
-        url_maps.put("CAS", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/cas.jpg");
-        url_maps.put("UNIVERSITY OF WATERLOO", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/waterloo.jpg");
-        url_maps.put("POLYTECHNIQUE MONERAL ", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/polytechnique.jpg");
 
-        for(String name : url_maps.keySet()){
-            TextSliderView textSliderView = new TextSliderView(includedLayout.getContext());
-            // initialize a SliderLayout
-            textSliderView
-                    .description(name)
-                    .image(url_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit);
+        if(checkNetwork.isNetworkAvailable(MainActivity.this))
+        {
+            RelativeLayout sliderLayout = (RelativeLayout) findViewById(R.id.sliderLayout);
+            sliderLayout.setVisibility(View.VISIBLE);
+            mDemoSlider = (SliderLayout) includedLayout2.findViewById(R.id.slider);
+            HashMap<String,String> url_maps = new HashMap<String, String>();
+            url_maps.put("UNIVERSITE DE LORRAINE", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/lorraine.jpg");
+            url_maps.put("EMSI", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/emsi.jpg");
+            url_maps.put("CAS", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/cas.jpg");
+            url_maps.put("UNIVERSITY OF WATERLOO", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/waterloo.jpg");
+            url_maps.put("POLYTECHNIQUE MONERAL ", "http://www.ieeeicm2015.org/wp-content/uploads/2015/06/polytechnique.jpg");
 
-            //add your extra information
-            textSliderView.bundle(new Bundle());
-            textSliderView.getBundle()
-                    .putString("extra",name);
+            for(String name : url_maps.keySet()){
+                TextSliderView textSliderView = new TextSliderView(includedLayout.getContext());
+                // initialize a SliderLayout
+                textSliderView
+                        .description(name)
+                        .image(url_maps.get(name))
+                        .setScaleType(BaseSliderView.ScaleType.Fit);
 
-            mDemoSlider.addSlider(textSliderView);
+                //add your extra information
+                textSliderView.bundle(new Bundle());
+                textSliderView.getBundle()
+                        .putString("extra",name);
+
+                mDemoSlider.addSlider(textSliderView);
+            }
+            mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
+            mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+            mDemoSlider.setCustomAnimation(new DescriptionAnimation());
+            mDemoSlider.setDuration(5000);
+
+
+        }else
+        {
+            Toast.makeText(this," Please check your network !!",Toast.LENGTH_LONG).show();
         }
-        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
-        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
-        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
-        mDemoSlider.setDuration(5000);
 
 
         RelativeLayout date_layout =  (RelativeLayout) includedLayout2.findViewById(R.id.date_layout);
@@ -137,6 +150,11 @@ public class MainActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if(id == R.id.exit_item)
+        {
+            finish();
+            System.exit(0);
         }
 
         return super.onOptionsItemSelected(item);

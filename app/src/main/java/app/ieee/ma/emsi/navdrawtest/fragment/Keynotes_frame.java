@@ -3,9 +3,9 @@ package app.ieee.ma.emsi.navdrawtest.fragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import app.ieee.ma.emsi.navdrawtest.R;
 
@@ -21,7 +21,14 @@ public class Keynotes_frame extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.display_frame);
 
-        //initToolbar();
+        //initToolBar
+
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_white);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
         name = (TextView) findViewById(R.id.keynotes_title);
         title = (TextView) findViewById(R.id.keynotes_sub_title);
@@ -30,7 +37,7 @@ public class Keynotes_frame extends ActionBarActivity {
 
         Bundle bundle = getIntent().getExtras();
         if(bundle != null) {  position = Integer.parseInt(bundle.getString("position"));
-            Toast.makeText(getApplicationContext(),position+"",Toast.LENGTH_LONG).show();
+            /*Toast.makeText(getApplicationContext(),position+"",Toast.LENGTH_LONG).show();*/
         }
 
 
@@ -76,6 +83,24 @@ public class Keynotes_frame extends ActionBarActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setLogo(R.drawable.ic_action_ieee);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.righttoleft_enter, R.anim.righttoleft_exit);
+        //setResult(Activity.RESULT_OK, null);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if(item.getItemId() == android.R.id.home)
+        {
+            finish();
+            onBackPressed();
+        }
+        return   super.onOptionsItemSelected(item);
     }
 }
 

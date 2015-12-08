@@ -16,9 +16,6 @@ import app.ieee.ma.emsi.navdrawtest.wiki_fragment.Day1Fragment;
 import app.ieee.ma.emsi.navdrawtest.wiki_fragment.Day2Fragment;
 import app.ieee.ma.emsi.navdrawtest.wiki_fragment.Day3Fragment;
 import app.ieee.ma.emsi.navdrawtest.wiki_fragment.Day4Fragment;
-import app.ieee.ma.emsi.navdrawtest.wiki_fragment.FirstFragment;
-import app.ieee.ma.emsi.navdrawtest.wiki_fragment.SecondFragment;
-import app.ieee.ma.emsi.navdrawtest.wiki_fragment.ThirdFragment;
 
 
 public class Planning extends AppCompatActivity {
@@ -59,8 +56,8 @@ public class Planning extends AppCompatActivity {
 
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
-        private static int NUM_ITEMS = 4;
-        private String tabTitles[] = new String[] { "20/12", "21/12", "22/12", "23/12" };
+        private static int NUM_ITEMS =4;
+        private String tabTitles[] = new String[] { "20/12", "21/12", "22/12","23/12" };
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
         }
